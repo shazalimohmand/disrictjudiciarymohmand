@@ -1,0 +1,39 @@
+/* Styling for navbar-brand text */
+.navbar-brand .text-start {
+    line-height: 1.2;
+    font-size: 0.9rem;
+    font-weight: bold !important;
+}
+
+/* Allow wrapping for links but not for words in links */
+.navbar-nav {
+    flex-wrap: wrap; /* Enable wrapping of links */
+    gap: 5px; /* Adjust the gap between rows of wrapped links */
+    line-height: 1; /* Reduce line height to minimize line gap */
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.navbar-nav .nav-link {
+    white-space: nowrap; /* Prevent word wrapping within individual links */
+    color: black; /* Default color for navbar links */
+    transition: color 0.3s ease; /* Smooth color transition */
+    padding: 0.25rem 0.5rem; /* Adjust padding for a compact look */
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(250, 164, 4); /* Color for the active link */
+}
+
+.navbar-nav .nav-link:hover {
+    color: orange; /* Optional hover color */
+}
+
+/* Optional: Reduce default padding to make navbar more compact */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.carousel-item img{
+    height:70vh;
+}
